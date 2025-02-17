@@ -4,7 +4,6 @@ This is my personal homepage, where I share information about myself, my studies
 ## Features  
 - **About Me**: A short introduction to who I am and what I do.  
 - **Projects**: A portfolio showcasing my coding projects and academic work.  
-- **Blog (optional)**: Insights on topics I find interesting, from tech trends to personal experiences in studying computer science.  
 - **Contact**: Ways to reach me via email, LinkedIn, or GitHub.  
 
 ## Tech Stack  
