@@ -57,24 +57,25 @@
     })
     .then(response => {
       if( response.ok ) {
-        return response.text();
+        return response.json();
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (data.success) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+        throw new Error(data.message ? data.message : 'Form submission failed and no error message returned from: ' + action);
       }
     })
     .catch((error) => {
       displayError(thisForm, error);
     });
   }
+
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
