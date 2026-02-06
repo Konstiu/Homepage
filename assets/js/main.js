@@ -226,4 +226,93 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+
+/**
+ * Featured project video: show play button, play once on click, then loop
+ */
+(() => {
+  const video = document.getElementById('taxiVideo');
+  if (!video) return;
+
+  let hasPlayed = false;
+
+  // Create play button overlay
+  const playButton = document.createElement('div');
+  playButton.innerHTML = '<i class="bi bi-play-circle-fill"></i>';
+  playButton.style.cssText = `
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 10;
+  `;
+  
+  // Insert button after video
+  video.parentElement.style.position = 'relative';
+  video.parentElement.appendChild(playButton);
+
+  // Pause video initially
+  video.pause();
+  video.currentTime = 0;
+
+  playButton.addEventListener('click', () => {
+    playButton.style.opacity = '0';
+    setTimeout(() => playButton.style.display = 'none', 300);
+    
+    video.muted = true; // Unmute for playback
+    video.loop = false;
+    video.play().catch(() => {});
+    hasPlayed = true;
+  });
+
+  video.addEventListener('click', () => {
+    if (!hasPlayed) {
+      playButton.click();
+    }
+  });
+
+  video.addEventListener('ended', () => {
+    video.loop = true;
+    video.muted = true;
+    video.play().catch(() => {});
+  });
+
+  // Hover effect
+  playButton.addEventListener('mouseenter', () => {
+    playButton.style.transform = 'translate(-50%, -50%) scale(1.1)';
+  });
+  playButton.addEventListener('mouseleave', () => {
+    playButton.style.transform = 'translate(-50%, -50%) scale(1)';
+  });
+
+  })();
+
+
+
+/**
+   * Dynamic age calculation
+   */
+  (() => {
+    const ageEl = document.getElementById('age');
+    if (!ageEl) return;
+
+    // Your birthday: 7 December 2002
+    const birthDate = new Date(2002, 11, 7); // month is 0-based
+    const today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const hasHadBirthdayThisYear =
+      today.getMonth() > birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+
+    if (!hasHadBirthdayThisYear) {
+      age--;
+    }
+
+    ageEl.textContent = age;
+  })();
 })();
