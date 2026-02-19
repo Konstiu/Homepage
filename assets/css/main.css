@@ -57,6 +57,10 @@ nav .container {
   align-items: baseline;
 }
 
+.nav-top {
+  display: block;
+}
+
 .wordmark {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 300;
@@ -89,6 +93,57 @@ nav a {
 
 nav a:hover {
   color: var(--ink);
+}
+
+.nav-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  margin: -10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-toggle:hover {
+  background: rgba(17, 17, 16, 0.05);
+  color: var(--ink);
+}
+
+.nav-toggle:focus-visible {
+  outline: 1px solid var(--red);
+  outline-offset: 2px;
+}
+
+.nav-toggle-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.nav-toggle-line {
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+nav.menu-open .nav-toggle-line--top {
+  transform: translateY(5px) rotate(45deg);
+}
+
+nav.menu-open .nav-toggle-line--middle {
+  opacity: 0;
+}
+
+nav.menu-open .nav-toggle-line--bottom {
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 .hero {
@@ -464,13 +519,33 @@ footer .container {
 
   nav .container {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   nav ul {
-    gap: 1rem 1.25rem;
+    display: none;
+    flex-direction: column;
+    gap: 0.75rem;
     justify-content: flex-start;
+    width: 100%;
+    padding-top: 0.25rem;
+  }
+
+  nav.menu-open ul {
+    display: flex;
   }
 
   .timeline-head {

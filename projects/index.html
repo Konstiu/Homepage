@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects | unterweger.tech</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon_io/favicon.ico">
+<link rel="manifest" href="/favicon_io/site.webmanifest">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 <script src="../assets/js/main.js" defer></script>
@@ -12,8 +17,17 @@
 
 <nav>
   <div class="container">
-    <a class="wordmark" href="/">unterweger<span>.tech</span></a>
-    <ul>
+    <div class="nav-top">
+      <a class="wordmark" href="/">unterweger<span>.tech</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <svg class="nav-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <line class="nav-toggle-line nav-toggle-line--top" x1="4" y1="7" x2="20" y2="7"></line>
+          <line class="nav-toggle-line nav-toggle-line--middle" x1="4" y1="12" x2="20" y2="12"></line>
+          <line class="nav-toggle-line nav-toggle-line--bottom" x1="4" y1="17" x2="20" y2="17"></line>
+        </svg>
+      </button>
+    </div>
+    <ul id="site-nav">
       <li><a href="/">Home</a></li>
       <li><a href="/#experience">Experience</a></li>
       <li><a href="/#education">Education</a></li>
