@@ -5,6 +5,21 @@
   --accent: #1a1a1a;
   --line: #e0dfd9;
   --red: #c0392b;
+  --hover-surface: rgba(17, 17, 16, 0.05);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151515;
+    --ink: #f1f1ee;
+    --muted: #b0b0aa;
+    --accent: #f1f1ee;
+    --line: #343430;
+    --red: #e07a6f;
+    --hover-surface: rgba(241, 241, 238, 0.08);
+    color-scheme: dark;
+  }
 }
 
 *,
@@ -110,7 +125,7 @@ nav a:hover {
 }
 
 .nav-toggle:hover {
-  background: rgba(17, 17, 16, 0.05);
+  background: var(--hover-surface);
   color: var(--ink);
 }
 
