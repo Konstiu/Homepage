@@ -1,642 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Unterweger Konstantin</title>
-    <meta content="Portfolio of Konstantin Unterweger, software developer and TU Wien computer science graduate, featuring projects, experience, and contact information." name="description">
-
-    <!-- Favicons -->
-    <link href="assets/img/initials.webp" rel="icon">
-    <!--link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"-->
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>unterweger.tech</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<script src="assets/js/main.js" defer></script>
 </head>
+<body>
 
-<body class="index-page">
+<nav>
+  <div class="container">
+    <a class="wordmark" href="/">unterweger<span>.tech</span></a>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="mailto:konstantin@unterweger.tech">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-<header id="header" class="header d-flex flex-column justify-content-center">
+<main>
+  <div class="container">
 
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <section class="hero">
+      <p class="signal-line">Signal over noise</p>
+      <h1>Konstantin Unterweger<br>Software Engineer</h1>
+      <p class="hero-sub">Computer Science graduate from TU Wien focused on building reliable software, solving real problems, and continuously learning through hands-on work.</p>
+    </section>
 
-    <nav id="navmenu" class="navmenu">
-        <ul>
-            <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-            <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-            <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-            <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Projects</span></a></li>
-            <!--li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li-->
-            <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-        </ul>
-    </nav>
+    <section class="projects" id="projects">
+      <p class="section-label">Selected work</p>
 
-</header>
-
-<main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-        <img src="assets/img/img.png" alt="Konstantin Unterweger hero background image">
-
-        <div class="container" data-aos="zoom-out">
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <h2>Konstantin Unterweger</h2>
-                    <p>I'm <span class="typed"
-                                 data-typed-items="a Software Developer, a CS Graduate, a Problem Solver">a CS Graduate</span><span
-                            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-                    <div class="social-links">
-<!--                        <a href="https://example.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>-->
-<!--                        <a href="https://example.com/" target="_blank"><i class="bi bi-facebook"></i></a>-->
-<!--                        <a href="https://example.com/" target="_blank"><i class="bi bi-instagram"></i></a>-->
-                        <a href="https://www.linkedin.com/in/konstantin-unterweger/" target="_blank" rel="noopener noreferrer"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/Konstiu" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-            </div>
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Real-Time Taxi Stream Processing</span>
+          <span class="project-tag">Kafka · Storm · Redis <span class="expand-icon">+</span></span>
         </div>
+        <p class="project-summary">Distributed real-time analytics system for taxi movement data with live dashboard updates.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Low-latency event processing and real-time aggregation from high-volume taxi streams.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Architecture</dt>
+            <dd>Kafka for ingestion, Storm for stream processing, Redis for low-latency state and alerting.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Delivery</dt>
+            <dd>Results were pushed to a live dashboard via WebSockets for immediate observability.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Tech</dt>
+            <dd>Kafka, Storm, Redis, Docker, WebSockets.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/taxi-stream-processing" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>About</h2>
-            <p>Hi, I'm <strong>Konstantin</strong>, a <strong>Computer Science</strong>
-                        student at <strong>TU Wien</strong>. I completed my <strong>bachelor's degree</strong>
-                        in <strong>July 2025</strong> and I am passionate about software development, algorithms,
-                        and problem solving, and I enjoy learning new technologies through hands-on projects.</p>
-
-             <p>Beyond my studies, <strong>sports have always played an important role</strong> in my life. I spent my youth playing <strong>ice hockey in the Austrian Bundesliga</strong>, which shaped my <strong>discipline, resilience, and team spirit</strong>. Balancing competitive sports with academics taught me how to <strong>manage time effectively</strong> and approach challenges with a <strong>focused, strategic mindset</strong>.</p>
-
-            <p>I'm always open to connecting, discussing technology, collaborating on projects, or talking about sports.
-                Feel free to reach out.</p>
-
-
-                </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row gy-4 justify-content-center">
-                <div class="col-lg-4">
-                    <img src="assets/img/Bild.JPG" width="60%" height="60%" class="img-fluid" alt="Portrait of Konstantin Unterweger">
-                </div>
-                <div class="col-lg-8 content">
-                    <h2>Software Developer & Critical Thinker | CS @ TU Wien</h2>
-                    <div class="fst-italic py-3">
-                    <p>I enjoy <strong>solving complex problems, writing clean and efficient code, and continuously learning</strong>. My background in <strong>Computer Science at TU Wien</strong> and years of competitive <strong>ice hockey in the Austrian Bundesliga</strong> have strengthened my <strong>analytical thinking, resilience, and teamwork</strong>.</p>
-
-                    </div>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i><span>Passionate about <strong>algorithms, software development, and optimization.</strong></span></li>
-                        <li><i class="bi bi-chevron-right"></i><span>Open to <strong>collaboration, technical discussions, and new challenges.</strong></span></li>
-                    </ul>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong>
-                                    <span>7 December 2002</span></li>
-<!--                                <li>-->
-<!--                                    <i class="bi bi-chevron-right"></i>-->
-<!--                                    <strong>Homepage:</strong>-->
-<!--                                    <a href="https://konstiu.github.io/Homepage/" target="_blank"-->
-<!--                                       rel="noopener noreferrer">-->
-<!--                                        https://konstiu.github.io/Homepage/-->
-<!--                                    </a>-->
-<!--                                </li>-->
-
-                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong>
-                                    <span>Vienna, Austria</span></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul>
-								<li>
-								<i class="bi bi-chevron-right"></i>
-								<strong>Age:</strong> <span id="age"></span>
-								</li>
-                                <!--li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span>
-                                </li-->
-                                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
-                                    <span>Student</span></li>
-                                <!--li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
-                                    <span>Available</span></li-->
-                            </ul>
-                        </div>
-                    </div>
-                    <!--p class="py-3">
-                        Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci
-                        omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                        Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque
-                        neque.
-                    </p-->
-                </div>
-            </div>
-
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Rust OS - Minimal x86_64 Operating System</span>
+          <span class="project-tag">Rust · Systems <span class="expand-icon">+</span></span>
         </div>
+        <p class="project-summary">A minimal operating system in Rust that boots in QEMU with paging, interrupts, RAM disk, and shell support.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Hands-on OS fundamentals: boot process, memory management, interrupts, and low-level system design.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Architecture</dt>
+            <dd>Boots in QEMU, mounts a TAR-backed RAM disk at root, and exposes an interactive shell with tab completion.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Runtime</dt>
+            <dd>Supports running WASM apps that render to framebuffer and hand control back to the OS.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Tech</dt>
+            <dd>Rust, x86_64, QEMU, paging, interrupts, WASM, framebuffer.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/Rust-OS" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
 
-    </section><!-- /About Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Skills</h2>
-            <p>During my studies at TU Wien, I built a broad technical foundation across software engineering and machine learning.
-                I continue to explore new tools and frameworks to improve how I design, build, and ship solutions.
-                Here are the technologies I work with most:</p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row skills-content skills-animation">
-
-                <div class="skills-section">
-                    <div class="skills-container">
-                        <div class="skill">C</div>
-                        <div class="skill">Java</div>
-                        <div class="skill">Python</div>
-                        <div class="skill">JavaScript</div>
-                        <div class="skill">TypeScript</div>
-                        <div class="skill">HTML</div>
-                        <div class="skill">CSS</div>
-                        <div class="skill">SQL</div>
-                        <div class="skill">Angular</div>
-                        <div class="skill">Spring Boot</div>
-                        <div class="skill">OpenGL</div>
-                        <div class="skill">JSONata</div>
-                        <div class="skill">Bootstrap</div>
-                        <div class="skill">Git</div>
-                        <div class="skill">GitHub</div>
-                        <div class="skill">GitLab</div>
-                        <div class="skill">SCSS</div>
-                        <div class="skill">Machine Learning</div>
-
-                    </div>
-                </div>
-            </div>
-
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Shazam - Audio Retrieval</span>
+          <span class="project-tag">Audio ML · Retrieval <span class="expand-icon">+</span></span>
         </div>
+        <p class="project-summary">Audio identification system following the classic Shazam fingerprinting approach for robust song matching.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Fast and robust retrieval using fingerprint extraction and hash-based matching.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Approach</dt>
+            <dd>Built compact spectral fingerprints for short, noisy, or distorted audio clips.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Reference</dt>
+            <dd><a class="link-inline" href="https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf" target="_blank" rel="noopener noreferrer">Original paper (Wang 2003)</a></dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/Music-Information-Retrieval" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
 
-    </section><!-- /Skills Section -->
+      <div class="projects-more">
+        <a class="projects-link" href="/projects/">See all projects →</a>
+      </div>
+    </section>
 
-    <!-- Resume Section -->
+    <section class="resume-section" id="experience">
+      <p class="section-label">Professional experience</p>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-head">
+            <h2 class="timeline-title">Technische Universitat Wien</h2>
+            <span class="timeline-date">Oct 2024 - Feb 2026</span>
+          </div>
+          <p class="timeline-role">Tutor, E194 - Institute for Information Systems Engineering</p>
+          <p class="timeline-text">Tutor for Programming Paradigms and Introduction to Programming 2. Supported students in applying core programming concepts and solving practical assignments.</p>
+          <a class="link-inline" href="https://tiss.tuwien.ac.at/adressbuch/adressbuch/orgeinheit_via_nummer/E194" target="_blank" rel="noopener noreferrer">Visit TU Wien</a>
+        </article>
 
-    <section id="resume" class="resume section">
+        <article class="timeline-item">
+          <div class="timeline-head">
+            <h2 class="timeline-title">Onlim</h2>
+            <span class="timeline-date">Sep 2023 & Sep 2024</span>
+          </div>
+          <p class="timeline-role">AI Developer Intern</p>
+          <p class="timeline-text">Worked on chatbot development, response quality improvement, and evaluation of conversational AI and NLP pipelines.</p>
+          <a class="link-inline" href="https://onlim.com/" target="_blank" rel="noopener noreferrer">Visit Onlim</a>
+        </article>
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Resume</h2>
-            <p>A quick overview of the education and experience that shaped my path as a problem solver and software developer.</p>
-        </div><!-- End Section Title -->
+        <article class="timeline-item">
+          <div class="timeline-head">
+            <h2 class="timeline-title">Austrian Armed Forces</h2>
+            <span class="timeline-date">Jul 2021 - Jan 2022</span>
+          </div>
+          <p class="timeline-role">Military Service, 1st Guard Company</p>
+          <p class="timeline-text">Completed service in the 1st Guard Company (1. Garde Kompanie), strengthening discipline and teamwork under high-responsibility conditions.</p>
+          <a class="link-inline" href="https://www.bundesheer.at/unser-heer/organisation/verbaende/garde" target="_blank" rel="noopener noreferrer">Visit Garde</a>
+        </article>
+      </div>
+    </section>
 
-        <div class="container">
+    <section class="resume-section" id="education">
+      <p class="section-label">Education</p>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-head">
+            <h2 class="timeline-title">Technical University of Vienna (TU Wien)</h2>
+            <span class="timeline-date">Oct 2022 - Jul 2025</span>
+          </div>
+          <p class="timeline-role">BSc Informatics, specialization in Artificial Intelligence</p>
+          <p class="timeline-text">Completed bachelor's degree in July 2025 with focus on software engineering and machine learning.</p>
+          <a class="link-inline" href="assets/docs/Bachelor_Thesis_Unterweger_Konstantin_12222196.pdf" target="_blank" rel="noopener noreferrer">Read my Bachelor Thesis (June 2025)</a>
+        </article>
 
-            <div class="row">
+        <article class="timeline-item">
+          <div class="timeline-head">
+            <h2 class="timeline-title">BG9 Wasagasse 9</h2>
+            <span class="timeline-date">Sep 2013 - Jun 2021</span>
+          </div>
+          <p class="timeline-role">General Higher Education Entrance Qualification (Matura)</p>
+        </article>
+      </div>
+    </section>
 
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                        <h4>Technical University of Vienna (TU Wien)</h4>
-                        <h5>October 2022 - July 2025</h5>
-                        <p><em>Bachelor's Degree in Informatics with a Specialization in Artificial Intelligence</em>
-                        </p>
-                        <!--                        <ul>-->
-                        <!--                            <li>Bachelor Thesis: <a href="bachelors-thesis.html">A Systematic Approach to the Temporal Analysis of Dependency Updates in Software Projects</a></li>-->
-                        <!--                        </ul>-->
-                        <ul>
-                            <li>
-                                📄 <a href="assets/Bachelor_Thesis_Unterweger_Konstantin_12222196.pdf"
-                                     aria-label="View My Bachelor Thesis, June 2025" target="_blank" rel="noopener noreferrer">
-                                My Bachelor Thesis (June 2025)
-                            </a>
-                            </li>
-                        </ul>
-                        <!--ul>
-                            <li>Enrolled in a Bachelor's program in <strong>Informatics</strong> at TU Wien.</li>
-                            <li>Specializing in <strong>Artificial Intelligence</strong>, focusing on machine learning
-                                and neural networks.
-                            </li>
-                            <li>Gained expertise in data-driven decision-making and intelligent system development.</li>
-                            <li>Exploring real-world applications of AI to solve complex problems.</li>
-                            <li>Developing strong problem-solving and analytical skills through various projects and
-                                coursework.
-                            </li>
-                        </ul-->
-                    </div>
-                    <div class="resume-item">
-                        <h4>Wasagasse 9, BG9</h4>
-                        <h5>2013/14 - 2020/21</h5>
-                        <p><em>General Higher Education Entrance Qualification (Matura) 2021</em></p>
-                        <!--ul>
-                            <li>Successfully completed my Matura at <strong>BG9 in Wasagasse</strong> in 2021.</li>
-                            <li>Developed a strong interest in <strong>Informatics</strong> early on.</li>
-                            <li>Pursued a <strong>specialization in Informatics</strong> during school.</li>
-                            <li>Strengthened my passion for <strong>technology and innovation</strong>.</li>
-                            <li>Gained valuable problem-solving and analytical skills during my studies.</li>
-                        </ul-->
-                    </div>
-                    <!-- Edn Resume Item -->
-
-                </div>
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>Technische Universität Wien</h4>
-                        <p><em>Tutor, E194 - Institut für Information Systems Engineering</em></p>
-                        <a href="https://tiss.tuwien.ac.at/adressbuch/adressbuch/orgeinheit_via_nummer/E194"
-                           title="Go to TU Wien" target="_blank" rel="noopener noreferrer">Visit TU Wien</a>
-                        <ul>
-                            <li>
-                                <strong>October 2025 - February 2026:</strong> <em>Tutor, Programmierparadigmen</em> - helped students understand and apply different programming paradigms.
-                            </li>
-                            <li>
-                                <strong>February 2025 - July 2025:</strong> <em>Tutor, Einführung in die Programmierung 2</em> - supported students in advanced programming coursework.
-                            </li>
-                            <li>
-                                <strong>October 2024 - February 2025:</strong> <em>Tutor, Programmierparadigmen</em> - helped students understand and apply different programming paradigms.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="resume-item">
-                        <h4>Onlim</h4>
-                        <p><em>AI Developer Intern</em></p>
-                        <a href="https://onlim.com/" title="Go to Onlim" target="_blank" rel="noopener noreferrer">Visit Onlim</a>
-
-                        <ul>
-                            <li>
-                                <strong>September 2024:</strong> Contributed to chatbot development and evaluation of conversational AI models.
-                            </li>
-                            <li>
-                                <strong>September 2023:</strong> Improved chatbot response quality and supported NLP pipeline optimization.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Prostaff</h4>
-                        <p><em>Catering</em></p>
-                        <h5>2022 - 2022</h5>
-                        <a href="https://www.prostaff.at/" title="Go to Prostaff" target="_blank" rel="noopener noreferrer">Visit Prostaff</a>
-                        <ul>
-                            <li>
-                                Worked as a waiter, delivering food and beverage service at a range of events.
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="resume-item">
-                        <h4>Austrian Armed Forces</h4>
-                        <p><em>Military Service</em></p>
-                        <h5>2021 - 2022</h5>
-                        <a href="https://www.bundesheer.at/unser-heer/organisation/verbaende/garde" title="Go to Garde" target="_blank" rel="noopener noreferrer">Visit Garde</a>
-
-                        <ul>
-                            <li>
-                                Completed service in the 1st Guard Company (1. Garde Kompanie).
-                            </li>
-                        </ul>
-
-                        <!--p><em>Military Service</em></p>
-                        <ul>
-                            <li>Completed compulsory military service in the <strong>1st Guard Company</strong> of the Austrian Armed Forces.</li>
-                            <li>Participated in ceremonial and security duties, including high-profile state events.</li>
-                            <li>Received training in:
-                                <ul>
-                                    <li><strong>Military Discipline & Leadership</strong> – Developed resilience, teamwork, and leadership skills.</li>
-                                    <li><strong>Physical Fitness & Tactical Drills</strong> – Strengthened endurance and combat readiness.</li>
-                                    <li><strong>Weapon Handling & Safety</strong> – Gained proficiency in firearms and security protocols.</li>
-                                </ul>
-                            </li>
-                            <li>Contributed to national security efforts and represented the military in official ceremonies.</li>
-                            <li>Further enhanced my ability to work under pressure and in structured environments.</li>
-                        </ul-->
-                    </div>
-                    <!-- Edn Resume Item -->
-
-                </div>
-
-            </div>
-
+    <section class="about" id="about">
+      <div class="about-text">
+        <p class="section-label">About</p>
+        <p>I'm a software developer from Vienna with a Computer Science background from TU Wien. I enjoy solving complex problems, writing clean code, and learning by building.</p>
+        <p>Years of competitive ice hockey in the Austrian Bundesliga shaped my discipline, resilience, and team-first mindset, which strongly influences how I work in engineering teams.</p>
+      </div>
+      <div class="about-meta">
+        <div class="meta-row">
+          <span class="meta-label">Location</span>
+          <span class="meta-value">Vienna, Austria</span>
         </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Projects</h2>
-            <p>I enjoy turning ideas into working software. These projects highlight how I approach real-world problems,
-                from systems programming and distributed architectures to machine learning and visualization.</p>
-        </div><!-- End Section Title -->
-        <div class="container">
-
-			<!-- Featured Project: Real-Time Taxi Stream Processing -->
-			<div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="100">
-				<!-- Video / Preview -->
-				<div class="test col-12 col-md-6">
-					<video
-						id="taxiVideo"
-						class="img-fluid rounded shadow-sm test-class"
-						loop
-						muted
-						playsinline
-						preload="metadata"
-						poster="assets/img/title_Image_taxi.png"
-						style="width: 100%;">
-						<source src="assets/vid/Taxi_Video.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</div>
-
-				<!-- Text -->
-				<div class="col-12 col-md-6">
-					<h3 class="mt-4 mt-md-0">Real-Time Taxi Stream Processing</h3>
-					<p>
-						A <strong>distributed real-time analytics system</strong> for taxi movement data.
-						It uses <strong>Kafka</strong> for ingestion, <strong>Storm</strong> for stream
-						processing, and <strong>Redis</strong> for low-latency state and alerting.
-						Results are streamed to a live dashboard over WebSockets.
-					</p>
-
-					<p class="mb-2">
-						<strong>Tech:</strong> Kafka · Storm · Redis · Docker · WebSockets
-					</p>
-
-					<a href="https://github.com/Konstiu/taxi-stream-processing"
-					class="btn btn-primary"
-					target="_blank" rel="noopener noreferrer"
-					rel="noopener noreferrer">
-						View on GitHub
-					</a>
-				</div>
-
-			</div>
-
-
-			<!-- Featured Project: Rust OS -->
-			<div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="100">
-
-				<div class="test col-12 col-md-6">
-					<img src="assets/img/Rust-OS.png"
-						class="img-fluid rounded shadow-sm test-class"
-						alt="Rust OS Screenshot">
-				</div>
-
-				<div class="col-12 col-md-6">
-					<h3 class="mt-4 mt-md-0">Rust OS – Minimal x86_64 Operating System</h3>
-					<p>
-						A <strong>minimal operating system written in Rust for x86_64</strong>.
-						It boots in QEMU, sets up paging, interrupts, and memory management,
-						mounts a <strong>TAR-backed RAM disk</strong> at <code>/</code>, and provides an
-						<strong>interactive shell</strong> with tab completion and file browsing.
-					</p>
-
-					<p>
-						The shell can execute <strong>WASM applications</strong> that render directly to the framebuffer
-						and return control to the OS, demonstrating user-kernel interaction and system extensibility.
-					</p>
-
-					<p class="mb-2">
-						<strong>Tech:</strong> Rust · x86_64 · QEMU · Paging · Interrupts · WASM · Framebuffer
-					</p>
-
-					<a href="https://github.com/Konstiu/Rust-OS"
-					class="btn btn-primary"
-					target="_blank" rel="noopener noreferrer">
-						View on GitHub
-					</a>
-				</div>
-
-			</div>
-
-
-            <!-- Project Card 1 -->
-            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="test col-12 col-md-6">
-                    <img src="assets/img/img_1.png" class="img-fluid rounded shadow-sm test-class"
-                         alt="TutorMatch Screenshot">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3 class="mt-4 mt-md-0">TutorMatch</h3>
-                    <p>
-                        TutorMatch is a platform I built with university colleagues to connect students for collaborative learning.
-                        It helps students find study partners, organize sessions, and learn from each other more effectively.
-                    </p>
-                    <a href="https://github.com/Konstiu/TutorMatch" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project Card 2 -->
-            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="test col-12 col-md-6">
-                <img src="assets/img/img_2.png" class="img-fluid rounded shadow-sm test-class"
-                     alt="Music-Information-Retrieval Screenshot">
-            </div>
-            <div class="col-12 col-md-6">
-                <h3 class="mt-4 mt-md-0">Shazam - Audio Retrieval</h3>
-                <p>
-                    This project implements the audio identification approach from the
-                    <a href="https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf" target="_blank" rel="noopener noreferrer">original Shazam paper (Wang, 2003)</a>.
-                    It uses audio fingerprinting and hash-based matching for fast and robust song retrieval.
-                    By extracting distinctive spectral features, the system builds compact fingerprints that can identify songs from short, noisy, or distorted recordings.
-                </p>
-                <a href="https://github.com/Konstiu/Music-Information-Retrieval" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                    View on GitHub
-                </a>
-            </div>
+        <div class="meta-row">
+          <span class="meta-label">Focus</span>
+          <span class="meta-value">Software Engineering · Backend · AI</span>
         </div>
-
-            <!-- Project Card 3 -->
-            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="test col-12 col-md-6">
-                    <img src="assets/img/img_3.png" class="img-fluid rounded shadow-sm test-class"
-                         alt="Music-Information-Retrieval Screenshot">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3 class="mt-4 mt-md-0">Rocket League - Trick Shot Classification</h3>
-                    <p>This project was part of a university Kaggle competition. I developed a machine learning model to classify Rocket League trick shots based on in-game metrics and player inputs. Using a dataset of 297 trick shots, I combined time-series features and summary statistics to train and evaluate a classifier for different maneuver types.</p>
-                    <a href="https://github.com/Konstiu/Rocket-League-Tickshots" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- Project Card 4 -->
-            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="test col-12 col-md-6">
-                    <img src="assets/img/img_4.png" class="img-fluid rounded shadow-sm test-class"
-                         alt="Music-Information-Retrieval Screenshot">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3 class="mt-4 mt-md-0">Distributed Message Broker Service</h3>
-                    <p>A distributed message broker service built for reliable and scalable communication. Brokers register through a custom DNS for dynamic cluster management and route messages through exchanges and queues. Leader election with Raft, Ring, or Bully algorithms keeps the system available during failures.</p>
-                    <a href="https://github.com/Konstiu/Distributed-Message-Broker-Server" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-                </div>
-            </div>
-
-
-            <!-- Project Card 5 -->
-            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="test col-12 col-md-6">
-                    <img src="assets/img/img_5.png" class="img-fluid rounded shadow-sm test-class"
-                         alt="Music-Information-Retrieval Screenshot">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3 class="mt-4 mt-md-0">Volume Visualization</h3>
-                    <p>This application processes medical data, including MRI and CT scans, using direct volume rendering techniques. It uses Three.js and GLSL shaders for detailed 3D visualization, while D3.js presents related analytical data to support exploration and interpretation.</p>
-                    <a href="https://github.com/Konstiu/Vis" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project Card 6 -->
-            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="test col-12 col-md-6">
-                    <img src="assets/img/img_6.png" class="img-fluid rounded shadow-sm test-class"
-                         alt="Music-Information-Retrieval Screenshot">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h3 class="mt-4 mt-md-0">Dependency Analysis</h3>
-                    <p>This tool tracks dependency updates across Java (Maven and Gradle), Python, and JavaScript manifest files. It analyzes how quickly updates are introduced and propagated through a codebase, and reports patterns in dependency behavior over time.</p>
-                    <a href="https://github.com/Konstiu/DependencyAnalysis" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        View on GitHub
-                    </a>
-                </div>
-            </div>
-
-
+        <div class="meta-row">
+          <span class="meta-label">Stack</span>
+          <span class="meta-value">Python · TypeScript · Java · SQL</span>
         </div>
-
-    </section><!-- /Portfolio Section -->
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Have a question, idea, or collaboration in mind? Send me a message through the form below.</p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade" data-aos-delay="100">
-
-            <div class="row gy-4 justify-content-center align-items-center">
-                <div class="col-lg-8">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form" data-aos="fade-up"
-                          data-aos-delay="200">
-                        <input type="hidden" name="access_key" value="64fcadfc-7ba5-43e3-94ec-fe3b2a66d803">
-                        <div class="row gy-4 ">
-
-                            <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name"
-                                       required="">
-                            </div>
-
-                            <div class="col-md-6 ">
-                                <input type="email" class="form-control" name="email" placeholder="Your Email"
-                                       required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject"
-                                       required="">
-                            </div>
-
-                            <div class="col-md-12">
-                                    <textarea class="form-control" name="message" rows="6" placeholder="Message"
-                                              required=""></textarea>
-                            </div>
-
-                            <div class="col-md-12 text-center">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                <button type="submit">Send Message</button>
-                            </div>
-
-                        </div>
-                    </form>
-                </div><!-- End Contact Form -->
-            </div>
+        <div class="meta-row">
+          <span class="meta-label">Available</span>
+          <span class="meta-value">Open to software engineering roles</span>
         </div>
-    </section><!-- /Contact Section -->
+      </div>
+    </section>
+
+  </div>
 </main>
 
-<footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-        <h3 class="sitename">Konstantin Unterweger</h3>
-        <p>
-            Thanks for visiting. You can follow my work on LinkedIn and GitHub.
-        </p>
-        <p class="copyright">
-            © 2026 Konstantin Unterweger. All rights reserved.
-        </p>
-        <div class="social-links d-flex justify-content-center">
-<!--            <a href=""><i class="bi bi-twitter-x"></i></a>-->
-<!--            <a href=""><i class="bi bi-facebook"></i></a>-->
-<!--            <a href=""><i class="bi bi-instagram"></i></a>-->
-<!--            <a href=""><i class="bi bi-skype"></i></a>-->
-            <a href="https://www.linkedin.com/in/konstantin-unterweger/" target="_blank" rel="noopener noreferrer"><i
-                    class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/Konstiu" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-        </div>
+<footer>
+  <div class="container">
+    <span class="footer-mono">© 2026 unterweger.tech</span>
+    <div class="footer-links">
+      <!---a href="assets/docs/CV- Konstantin Unterweger.pdf" target="_blank" rel="noopener noreferrer">CV</a-->
+      <a href="https://github.com/Konstiu" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/konstantin-unterweger/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:konstantin@unterweger.tech">Email</a>
     </div>
+  </div>
 </footer>
 
-<!-- Scroll Top -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
-
-<!-- Preloader -->
-<div id="preloader"></div>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<!-- Main JS File -->
-<script src="assets/js/main.js"></script>
-
 </body>
-
 </html>

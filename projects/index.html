@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | unterweger.tech</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a class="wordmark" href="/">unterweger<span>.tech</span></a>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/#experience">Experience</a></li>
+      <li><a href="/#education">Education</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="mailto:konstantin@unterweger.tech">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <section class="hero">
+      <p class="signal-line">More work</p>
+      <h1>Additional projects.</h1>
+      <p class="hero-sub">Extended list of projects in the same format, with implementation details and source links.</p>
+    </section>
+
+    <section class="projects" id="projects">
+      <p class="section-label">All projects</p>
+
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Real-Time Taxi Stream Processing</span>
+          <span class="project-tag">Kafka · Storm · Redis <span class="expand-icon">+</span></span>
+        </div>
+        <p class="project-summary">Distributed real-time analytics system for taxi movement data with live dashboard updates.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Low-latency event processing and real-time aggregation from high-volume taxi streams.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Architecture</dt>
+            <dd>Kafka for ingestion, Storm for stream processing, Redis for low-latency state and alerting.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Delivery</dt>
+            <dd>Results were pushed to a live dashboard via WebSockets for immediate observability.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Tech</dt>
+            <dd>Kafka, Storm, Redis, Docker, WebSockets.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/taxi-stream-processing" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Rust OS - Minimal x86_64 Operating System</span>
+          <span class="project-tag">Rust · Systems <span class="expand-icon">+</span></span>
+        </div>
+        <p class="project-summary">A minimal operating system in Rust that boots in QEMU with paging, interrupts, RAM disk, and shell support.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Hands-on OS fundamentals: boot process, memory management, interrupts, and low-level system design.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Architecture</dt>
+            <dd>Boots in QEMU, mounts a TAR-backed RAM disk at root, and exposes an interactive shell with tab completion.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Runtime</dt>
+            <dd>Supports running WASM apps that render to framebuffer and hand control back to the OS.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Tech</dt>
+            <dd>Rust, x86_64, QEMU, paging, interrupts, WASM, framebuffer.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/Rust-OS" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Shazam - Audio Retrieval</span>
+          <span class="project-tag">Audio ML · Retrieval <span class="expand-icon">+</span></span>
+        </div>
+        <p class="project-summary">Audio identification system following the classic Shazam fingerprinting approach for robust song matching.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Fast and robust retrieval using fingerprint extraction and hash-based matching.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Approach</dt>
+            <dd>Built compact spectral fingerprints for short, noisy, or distorted audio clips.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Reference</dt>
+            <dd><a class="link-inline" href="https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf" target="_blank" rel="noopener noreferrer">Original paper (Wang 2003)</a></dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/Music-Information-Retrieval" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">TutorMatch</span>
+          <span class="project-tag">Web · Collaboration <span class="expand-icon">+</span></span>
+        </div>
+        <p class="project-summary">Platform built with university colleagues to connect students for collaborative learning.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Help students find study partners, organize sessions, and support peer-to-peer learning.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Context</dt>
+            <dd>Built as a team project in a university setting with real student collaboration workflows in mind.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Result</dt>
+            <dd>Structured matching and scheduling flow for better study coordination.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/TutorMatch" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Rocket League Trick Shot Classification</span>
+          <span class="project-tag">Machine Learning <span class="expand-icon">+</span></span>
+        </div>
+        <p class="project-summary">University Kaggle project classifying trick shots from in-game metrics and player input signals.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Dataset</dt>
+            <dd>297 trick shots used for training and evaluation.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Method</dt>
+            <dd>Combined time-series features with summary statistics for maneuver classification.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Context</dt>
+            <dd>Implemented under competition conditions with emphasis on practical model performance.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/Rocket-League-Tickshots" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Distributed Message Broker Service</span>
+          <span class="project-tag">Distributed Systems <span class="expand-icon">+</span></span>
+        </div>
+        <p class="project-summary">Reliable and scalable message broker with dynamic cluster management and fault-tolerant leadership.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Reliable broker communication via exchanges and queues in a distributed setup.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Architecture</dt>
+            <dd>Brokers register through custom DNS; routing handled through exchange/queue abstractions.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Fault Tolerance</dt>
+            <dd>Leader election implemented with Raft, Ring, or Bully algorithms.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/Distributed-Message-Broker-Server" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Volume Visualization</span>
+          <span class="project-tag">Visualization · 3D <span class="expand-icon">+</span></span>
+        </div>
+        <p class="project-summary">Interactive medical volume visualization for MRI/CT scans using direct volume rendering.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Exploration and interpretation of volumetric medical data in real time.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Architecture</dt>
+            <dd>Three.js and GLSL for 3D volume rendering with D3.js for supporting analytics views.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Use Case</dt>
+            <dd>Combined rendering and analytics workflows for richer investigation of scan data.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/Vis" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="project" role="button" tabindex="0" aria-expanded="false">
+        <div class="project-header">
+          <span class="project-name">Dependency Analysis</span>
+          <span class="project-tag">Tooling · Research <span class="expand-icon">+</span></span>
+        </div>
+        <p class="project-summary">Tool for analyzing dependency update behavior across Java, Python, and JavaScript projects.</p>
+        <dl class="project-detail">
+          <div class="detail-block">
+            <dt>Focus</dt>
+            <dd>Track how quickly dependency updates are introduced and propagated through a codebase.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Scope</dt>
+            <dd>Supports Maven, Gradle, Python manifests, and JavaScript manifests.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Outcome</dt>
+            <dd>Reports update patterns and trends in dependency behavior over time.</dd>
+          </div>
+          <div class="detail-block">
+            <dt>Link</dt>
+            <dd><a class="link-inline" href="https://github.com/Konstiu/DependencyAnalysis" target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+          </div>
+        </dl>
+      </article>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <span class="footer-mono">© 2026 unterweger.tech</span>
+    <div class="footer-links">
+      <!--a href="../assets/docs/CV- Konstantin Unterweger.pdf" target="_blank" rel="noopener noreferrer">CV</a-->
+      <a href="https://github.com/Konstiu" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/konstantin-unterweger/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:konstantin@unterweger.tech">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
