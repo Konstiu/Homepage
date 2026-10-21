@@ -300,19 +300,6 @@ h1 {
   line-height: 1.6;
 }
 
-.expand-icon {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.75rem;
-  color: var(--muted);
-  float: right;
-  transition: transform 0.2s;
-  user-select: none;
-}
-
-.project.open .expand-icon {
-  transform: rotate(45deg);
-}
-
 .resume-section {
   margin-bottom: 6rem;
 }
@@ -609,10 +596,6 @@ footer .container {
 
 /* Project interaction */
 
-.project {
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
 
 .project-header {
     display: flex;
@@ -629,13 +612,18 @@ footer .container {
 }
 
 .expand-icon {
-    width: 18px;
-    height: 18px;
-    color: var(--muted);
-    flex-shrink: 0;
-    transition:
-        transform 0.25s ease,
-        color 0.2s ease;
+	display: block;
+	width: 18px;
+	height: 18px;
+	flex: 0 0 18px;
+
+	fill: none;
+	stroke: currentColor;
+	color: var(--muted);
+
+	transition:
+		transform 0.25s ease,
+		color 0.2s ease;
 }
 
 /* Hover */
@@ -647,12 +635,6 @@ footer .container {
 .project[aria-expanded="true"] .expand-icon {
     transform: rotate(180deg);
     color: var(--ink);
-}
-
-/* Keyboard navigation */
-.project:focus-visible {
-    outline: 1px solid var(--ink);
-    outline-offset: 4px;
 }
 
 /* Mobile */
