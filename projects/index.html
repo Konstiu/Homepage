@@ -54,7 +54,13 @@
             <article class="project" role="button" tabindex="0" aria-expanded="false">
                 <div class="project-header">
                     <span class="project-name">Real-Time Taxi Stream Processing</span>
-                    <span class="project-tag">Kafka · Storm · Redis <span class="expand-icon">+</span></span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Kafka · Storm · Redis</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
                 </div>
                 <p class="project-summary">A distributed real-time data processing system that ingests taxi location
                     streams, processes events with low latency, and pushes live results to a dashboard.</p>
@@ -84,7 +90,7 @@
                     <div class="detail-block">
                         <dt>Link</dt>
                         <dd><a class="link-inline" href="https://github.com/Konstiu/taxi-stream-processing"
-                               target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+                               target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></dd>
                     </div>
                 </dl>
             </article>
@@ -92,7 +98,13 @@
             <article class="project" role="button" tabindex="0" aria-expanded="false">
                 <div class="project-header">
                     <span class="project-name">Rust OS - Minimal x86_64 Operating System</span>
-                    <span class="project-tag">Rust · Systems <span class="expand-icon">+</span></span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Rust · Systems</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
                 </div>
                 <p class="project-summary">A small x86_64 operating system written in Rust that boots under QEMU and
                     implements core OS concepts such as paging, interrupts, a RAM-based filesystem, and a basic
@@ -123,103 +135,48 @@
                     <div class="detail-block">
                         <dt>Link</dt>
                         <dd><a class="link-inline" href="https://github.com/Konstiu/Rust-OS" target="_blank"
-                               rel="noopener noreferrer">View on GitHub</a></dd>
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
                     </div>
                 </dl>
             </article>
 
             <article class="project" role="button" tabindex="0" aria-expanded="false">
                 <div class="project-header">
-                    <span class="project-name">Shazam - Audio Retrieval</span>
-                    <span class="project-tag">Audio ML · Retrieval <span class="expand-icon">+</span></span>
+                    <span class="project-name">Legal Co-Pilot</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">LLM · RAG · FastAPI</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
                 </div>
-                <p class="project-summary">An audio fingerprinting and retrieval system inspired by the classic Shazam
-                    approach, designed to match short or noisy audio clips to a reference database.</p>
+                <p class="project-summary">A small-scale legal AI assistant: upload contracts, extract structured data, run playbook reviews, and ask
+                    questions with exact source citations.</p>
                 <dl class="project-detail">
                     <div class="detail-block">
                         <dt>Focus</dt>
-                        <dd>Fast, robust retrieval using spectral fingerprint extraction and hash-based matching.</dd>
+                        <dd>Grounded answers for legal documents, where every extracted value and answer is backed by a quote,
+                            page number, and location hint.</dd>
                     </div>
                     <div class="detail-block">
-                        <dt>Approach</dt>
-                        <dd>Converts audio to time-frequency features that are resilient to distortion or noise.</dd>
+                        <dt>Pipeline</dt>
+                        <dd>PDF/DOCX parsing, overlapping chunking with page tracking, embeddings stored in ChromaDB, and
+                            document metadata in SQLite.</dd>
                     </div>
                     <div class="detail-block">
-                        <dt>Reference</dt>
-                        <dd><a class="link-inline" href="https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf"
-                               target="_blank" rel="noopener noreferrer">Original paper (Wang 2003)</a></dd>
+                        <dt>Features</dt>
+                        <dd>Field extraction (document × field table), playbook review (rule → ok / deviation / missing),
+                            and multi-document Q&amp;A with citations.</dd>
                     </div>
-                    <div class="detail-block">
-                        <dt>Link</dt>
-                        <dd><a class="link-inline" href="https://github.com/Konstiu/Music-Information-Retrieval"
-                               target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
-                    </div>
-                </dl>
-            </article>
-
-            <article class="project" role="button" tabindex="0" aria-expanded="false">
-                <div class="project-header">
-                    <span class="project-name">TutorMatch</span>
-                    <span class="project-tag">Full-stack · Matching · Web <span class="expand-icon">+</span></span>
-                </div>
-                <p class="project-summary">Web platform for structured peer-to-peer study matching and session
-                    coordination.</p>
-                <dl class="project-detail">
-                    <div class="detail-block">
-                        <dt>Focus</dt>
-                        <dd>Designed matching workflows connecting students by subject, availability, and learning
-                            goals.
-                        </dd>
-                    </div>
-                    <div class="detail-block">
-                        <dt>Context</dt>
-                        <dd>Full-stack web application with structured user profiles, session scheduling, and matching
-                            logic.
-                        </dd>
-                    </div>
-                    <div class="detail-block">
-                        <dt>Result</dt>
-                        <dd>Reduced coordination overhead and improved discoverability of study partners.</dd>
-                    </div>
-                    <div class="detail-block">
-                        <dt>Link</dt>
-                        <dd><a class="link-inline" href="https://github.com/Konstiu/TutorMatch" target="_blank"
-                               rel="noopener noreferrer">View on GitHub</a></dd>
-                    </div>
-                </dl>
-            </article>
-
-            <article class="project" role="button" tabindex="0" aria-expanded="false">
-                <div class="project-header">
-                    <span class="project-name">Rocket League Trick Shot Classification</span>
-                    <span class="project-tag">Machine Learning <span class="expand-icon">+</span></span>
-                </div>
-                <p class="project-summary">Time-series classification of Rocket League trick shots using in-game
-                    telemetry and control signals.</p>
-                <dl class="project-detail">
-                    <div class="detail-block">
-                        <dt>Dataset</dt>
-                        <dd>297 labeled trick shot sequences used for training and evaluation.</dd>
-                    </div>
-
-                    <div class="detail-block">
-                        <dt>Method</dt>
-                        <dd>Extracted temporal features and statistical aggregates for maneuver classification.</dd>
-                    </div>
-
-                    <div class="detail-block">
-                        <dt>Approach</dt>
-                        <dd>Optimized for practical model performance under constrained data conditions.</dd>
-                    </div>
-
                     <div class="detail-block">
                         <dt>Tech</dt>
-                        <dd>Python, scikit-learn, time-series feature engineering.</dd>
+                        <dd>Python, FastAPI, ChromaDB, SQLite, PyMuPDF, provider-agnostic LLM adapter (OpenAI, Ollama, Gemini).</dd>
                     </div>
                     <div class="detail-block">
                         <dt>Link</dt>
-                        <dd><a class="link-inline" href="https://github.com/Konstiu/Rocket-League-Tickshots"
-                               target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/Lawyer_Co-Pilot" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
                     </div>
                 </dl>
             </article>
@@ -227,7 +184,13 @@
             <article class="project" role="button" tabindex="0" aria-expanded="false">
                 <div class="project-header">
                     <span class="project-name">Distributed Message Broker Service</span>
-                    <span class="project-tag">Distributed Systems <span class="expand-icon">+</span></span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Distributed Systems</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
                 </div>
                 <p class="project-summary">Fault-tolerant distributed message broker with dynamic cluster coordination
                     and leader election.</p>
@@ -254,46 +217,7 @@
                     <div class="detail-block">
                         <dt>Link</dt>
                         <dd><a class="link-inline" href="https://github.com/Konstiu/Distributed-Message-Broker-Server"
-                               target="_blank" rel="noopener noreferrer">View on GitHub</a></dd>
-                    </div>
-                </dl>
-            </article>
-
-            <article class="project" role="button" tabindex="0" aria-expanded="false">
-                <div class="project-header">
-                    <span class="project-name">Volume Visualization</span>
-                    <span class="project-tag">Visualization · 3D <span class="expand-icon">+</span></span>
-                </div>
-                <p class="project-summary">Interactive GPU-based 3D volume rendering for MRI and CT datasets.</p>
-                <dl class="project-detail">
-                    <div class="detail-block">
-                        <dt>Rendering</dt>
-                        <dd>Implemented direct volume rendering for real-time exploration of volumetric data.</dd>
-                    </div>
-
-                    <div class="detail-block">
-                        <dt>Pipeline</dt>
-                        <dd>Three.js and GLSL shaders for GPU rendering, D3.js for analytical support views.</dd>
-                    </div>
-
-                    <div class="detail-block">
-                        <dt>Integration</dt>
-                        <dd>Combined visualization and analytics workflows for structured medical data analysis.</dd>
-                    </div>
-
-                    <div class="detail-block">
-                        <dt>Tech</dt>
-                        <dd>Three.js, GLSL, D3.js, WebGL.</dd>
-                    </div>
-                    <div class="detail-block">
-                        <dt>Link</dt>
-                        <dd>
-                            <a class="link-inline" href="https://konstiu.github.io/VolumeVisualization/" target="_blank"
-                               rel="noopener noreferrer">Live demo</a>
-                            ·
-                            <a class="link-inline" href="https://github.com/Konstiu/Vis" target="_blank"
-                               rel="noopener noreferrer">View on GitHub</a>
-                        </dd>
+                               target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></dd>
                     </div>
                 </dl>
             </article>
@@ -301,7 +225,13 @@
             <article class="project" role="button" tabindex="0" aria-expanded="false">
                 <div class="project-header">
                     <span class="project-name">Dependency Analysis</span>
-                    <span class="project-tag">Tooling · Research <span class="expand-icon">+</span></span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Tooling · Research</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
                 </div>
                 <p class="project-summary">Longitudinal analysis tooling for dependency update behavior across Java,
                     Python, and JavaScript ecosystems.</p>
@@ -328,7 +258,446 @@
                     <div class="detail-block">
                         <dt>Link</dt>
                         <dd><a class="link-inline" href="https://github.com/Konstiu/DependencyAnalysis" target="_blank"
-                               rel="noopener noreferrer">View on GitHub</a></dd>
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">Nextcloud Markdown README Renderer</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Nextcloud · JavaScript · PHP</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">A Nextcloud app that renders a folder's README directly at the top of the Files view, similar to GitLab.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Focus</dt>
+                        <dd>Lightweight, native-feeling README rendering inside Nextcloud Files.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Features</dt>
+                        <dd>Case-insensitive README detection, read-only task lists, syntax highlighting, and auto-refresh
+                            on save, rename, or delete via the Nextcloud event bus.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Compatibility</dt>
+                        <dd>Supports Nextcloud 26–34 using the Files header API with a legacy registration fallback.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Tech</dt>
+                        <dd>JavaScript, PHP, webpack, highlight.js, Nextcloud app framework.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/MarkDown-renderer" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">Fdrop</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Linux · GTK4 · Packaging</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">A native GTK4/libadwaita app for AirDrop between a Linux laptop and nearby Apple devices on Fedora GNOME.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Focus</dt>
+                        <dd>Bring the Omdrop AirDrop panel from Omarchy to GNOME as a clean, stateless front end, without
+                            touching the underlying protocol.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Architecture</dt>
+                        <dd>The window drives the omdrop command and reads its JSON output; privileged radio
+                            operations run only through pkexec.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Packaging</dt>
+                        <dd>Install script builds pinned RPMs from source and installs them with dnf, with dry-run modes
+                            and a careful, reversible uninstall.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Tech</dt>
+                        <dd>Python, GTK4, libadwaita, RPM, Shell.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/Fdrop" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">Volume Visualization</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Visualization · 3D</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">Interactive GPU-based 3D volume rendering for MRI and CT datasets.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Rendering</dt>
+                        <dd>Implemented direct volume rendering for real-time exploration of volumetric data.</dd>
+                    </div>
+
+                    <div class="detail-block">
+                        <dt>Pipeline</dt>
+                        <dd>Three.js and GLSL shaders for GPU rendering, D3.js for analytical support views.</dd>
+                    </div>
+
+                    <div class="detail-block">
+                        <dt>Integration</dt>
+                        <dd>Combined visualization and analytics workflows for structured medical data analysis.</dd>
+                    </div>
+
+                    <div class="detail-block">
+                        <dt>Tech</dt>
+                        <dd>Three.js, GLSL, D3.js, WebGL.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd>
+                            <a class="link-inline" href="https://konstiu.github.io/VolumeVisualization/" target="_blank"
+                               rel="noopener noreferrer">Live demo ↗</a>
+                            ·
+                            <a class="link-inline" href="https://github.com/Konstiu/VolumeVisualization" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a>
+                        </dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">Shazam - Audio Retrieval</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Audio ML · Retrieval</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">An audio fingerprinting and retrieval system inspired by the classic Shazam
+                    approach, designed to match short or noisy audio clips to a reference database.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Focus</dt>
+                        <dd>Fast, robust retrieval using spectral fingerprint extraction and hash-based matching.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Approach</dt>
+                        <dd>Converts audio to time-frequency features that are resilient to distortion or noise.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Reference</dt>
+                        <dd><a class="link-inline" href="https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf"
+                               target="_blank" rel="noopener noreferrer">Original paper (Wang 2003) ↗</a></dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/Music-Information-Retrieval"
+                               target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">SmartRoute</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Full-stack · Mobile · Team</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">An advanced route planner built as a team project, with a cross-platform app for web, iOS, and Android.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Focus</dt>
+                        <dd>Software architecture, collaboration, and implementation quality in a larger monorepo with
+                            separate backend and frontend.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Architecture</dt>
+                        <dd>Java backend with Python helpers for activity data (Strava, Garmin Connect), an Ionic/Angular
+                            frontend packaged natively via Capacitor.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Delivery</dt>
+                        <dd>Push notifications for PWAs (Web Push / VAPID) and native Android (Firebase Cloud Messaging),
+                            GitLab CI pipeline, and Kubernetes deployment.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Tech</dt>
+                        <dd>Java, Maven, Angular, Ionic, Capacitor, TypeScript, Firebase, Kubernetes, GitLab CI.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/SmartRoute" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">Codex GUI</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Electron · React · Dev Tools</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">A desktop GUI for the Codex CLI that combines AI-assisted coding with an embedded terminal and a built-in
+                    versioning workflow.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Focus</dt>
+                        <dd>Make AI-driven code changes visible and reversible: see what changed, review it, and roll back in
+                            one click.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Features</dt>
+                        <dd>File explorer with changed-file highlighting, near real-time diff viewer, integrated Git
+                            snapshots, history, and revert.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Architecture</dt>
+                        <dd>Electron main process handles IPC, Git, and the PTY; a React UI talks to it through a safe
+                            preload bridge.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Tech</dt>
+                        <dd>Electron, React, Vite, xterm.js, node-pty, Git.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/Codex_GUI" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">Onion Routing Network</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Security · Networking</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">A small onion routing network where requests travel through multiple relay nodes, each peeling off one layer
+                    of encryption.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Focus</dt>
+                        <dd>Anonymous communication: no single relay knows both the origin and the destination of a request.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Architecture</dt>
+                        <dd>Directory service for node discovery, relay nodes, an originator with CLI and web interface,
+                            and a sample destination service.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Crypto</dt>
+                        <dd>Hybrid layered encryption with RSA-OAEP for key exchange and AES-GCM for payloads.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Tech</dt>
+                        <dd>Python, cryptography, Docker Compose, JavaScript.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/onion_routing" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">Kerma Blockchain Node</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Blockchain · P2P</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">A full node for the Kerma blockchain protocol that communicates with peers, validates objects, and maintains
+                    chain state.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Focus</dt>
+                        <dd>Implement the core of a cryptocurrency node: peer-to-peer messaging, object exchange, and
+                            validation.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Architecture</dt>
+                        <dd>Asynchronous networking with asyncio, peer management, object storage, and a mempool for
+                            pending transactions.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Validation</dt>
+                        <dd>Blocks are validated even when referenced transactions are still missing: unknown objects are
+                            fetched from peers with timeouts.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Tech</dt>
+                        <dd>Python, asyncio, Docker, GitHub Actions.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/kerma-chain" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">IceHockeyKG</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Knowledge Graphs · ML</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">A knowledge graph of hockey players and careers, enriched with Wikidata and used for career continuation
+                    prediction.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Focus</dt>
+                        <dd>Integrate tabular player statistics into a semantic graph and use it for analytics and
+                            prediction.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Pipeline</dt>
+                        <dd>EliteProspects CSV data converted to RDF/Turtle, enriched with Wikidata/Wikipedia links, photos,
+                            and team history.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Analysis</dt>
+                        <dd>SPARQL exploration in GraphDB and an ML workflow predicting whether a player's career
+                            continues.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Tech</dt>
+                        <dd>Python, RDF/Turtle, SPARQL, GraphDB, Wikidata, machine learning.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/IceHockeyKG" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">Rocket League Trick Shot Classification</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Machine Learning</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">Time-series classification of Rocket League trick shots using in-game
+                    telemetry and control signals.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Dataset</dt>
+                        <dd>297 labeled trick shot sequences used for training and evaluation.</dd>
+                    </div>
+
+                    <div class="detail-block">
+                        <dt>Method</dt>
+                        <dd>Extracted temporal features and statistical aggregates for maneuver classification.</dd>
+                    </div>
+
+                    <div class="detail-block">
+                        <dt>Approach</dt>
+                        <dd>Optimized for practical model performance under constrained data conditions.</dd>
+                    </div>
+
+                    <div class="detail-block">
+                        <dt>Tech</dt>
+                        <dd>Python, scikit-learn, time-series feature engineering.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/Rocket-League-Tickshots"
+                               target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="project" role="button" tabindex="0" aria-expanded="false">
+                <div class="project-header">
+                    <span class="project-name">TutorMatch</span>
+                    <div class="project-header-right">
+                        <span class="project-tag">Full-stack · Matching · Web</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="project-summary">Web platform for structured peer-to-peer study matching and session
+                    coordination.</p>
+                <dl class="project-detail">
+                    <div class="detail-block">
+                        <dt>Focus</dt>
+                        <dd>Designed matching workflows connecting students by subject, availability, and learning
+                            goals.
+                        </dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Context</dt>
+                        <dd>Full-stack web application with structured user profiles, session scheduling, and matching
+                            logic.
+                        </dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Result</dt>
+                        <dd>Reduced coordination overhead and improved discoverability of study partners.</dd>
+                    </div>
+                    <div class="detail-block">
+                        <dt>Link</dt>
+                        <dd><a class="link-inline" href="https://github.com/Konstiu/TutorMatch" target="_blank"
+                               rel="noopener noreferrer">View on GitHub ↗</a></dd>
                     </div>
                 </dl>
             </article>
